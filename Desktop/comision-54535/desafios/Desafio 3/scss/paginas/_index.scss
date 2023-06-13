@@ -1,0 +1,44 @@
+// imports
+@import "../utilidades/mixin";
+@import "../utilidades/listas";
+@import "../utilidades/variables";
+
+/* estilos de index*/
+// estilos de header
+
+body{
+    background-color: $principal-ct;
+    div{
+        h1{
+            display: flex;
+            justify-content: center;
+            
+        }
+    }
+    header{
+        img{
+            height: 5rem;
+            width: auto;
+            ul{
+                li{
+                    color: $letras-claritas;
+                }
+            }
+        }
+    }
+}
+
+.nav-estilo{
+    background-color: nth($colores-ct , 3 );
+}
+
+// estilos de main
+
+main{
+    div{
+        img{
+        
+        }
+    }
+}
+

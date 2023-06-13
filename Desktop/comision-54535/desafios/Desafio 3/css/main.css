@@ -1,1 +1,25 @@
+/* por alguna razon no funciona las fonts que descargue, aun no encuentro solucion */
+@font-face {
+  font-family: "Counter Strike";
+  src: url(../scss/fonts/counter_strike/cs_regular.ttf) format("truetype"); }
+
 /* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* estilos de index*/
+body {
+  background-color: #060518; }
+  body div h1 {
+    display: flex;
+    justify-content: center; }
+  body header img {
+    height: 5rem;
+    width: auto; }
+    body header img ul li {
+      color: #98BDE6; }
+
+.nav-estilo {
+  background-color: #403F4E; }
