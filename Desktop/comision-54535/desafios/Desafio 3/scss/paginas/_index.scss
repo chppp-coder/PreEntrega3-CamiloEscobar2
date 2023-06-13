@@ -8,37 +8,91 @@
 
 body{
     background-color: $principal-ct;
-    div{
-        h1{
-            display: flex;
-            justify-content: center;
-            
-        }
-    }
     header{
-        img{
-            height: 5rem;
-            width: auto;
+        nav{
+            border-radius: 26px;
+            background-color: nth($colores-ct, 2 );
+            box-shadow:  13px 13px 26px #000000,-13px -13px 26px #21213a;
+            margin-top: 2vh;
+            @include celular(768px) { 
+                
+            }
+            img{
+                margin-left: 8rem;
+                @include height (3.5rem);
+                @include celular () {
+                    margin-right: 8rem;
+                    @include height (1rem);
+                }
+            }
             ul{
-                li{
-                    color: $letras-claritas;
+                margin-left: 5%;
+                gap: 4.5rem;
+
+                @include celular(768px){ 
+                    gap: 1rem;
+                }
+            }
+
+            .nav__a{
+                color: $letras-claritas;
+                font-weight: lighter;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+        }
+        div{
+            @include celular (){
+                display: flex;
+                text-align: center
+            }
+            h1{ // me gustaria hacer mas grande este h1 de alguna manera
+                color: white;
+                font-family: Counter Strike;
+                margin: 2rem 3rem 3rem 3rem;
+                display: flex;
+                justify-content: center;
+                @include celular (768px){
+                    
+                }
+                @include celular (){
+
                 }
             }
         }
     }
 }
 
-.nav-estilo{
-    background-color: nth($colores-ct , 3 );
-}
+
+
+
+
+
 
 // estilos de main
 
 main{
     div{
+        @include flex(flex, column, nowrap, center, center) ;
         img{
-        
+            border-radius: 26px;
+            color: #060518;
+            box-shadow:  -13px -13px 26px #02020a,
+             13px 13px 26px #0a0826;
+            @include height(33rem);
+            @include celular() {
+
+            }
+        }
+        p{
+            color: $letras-normales;
+            overflow: hidden;
+            margin: 2rem 2rem 2rem 2rem;
+            text-align: center;
         }
     }
 }
+
+
+
+// estilos de footer
 
