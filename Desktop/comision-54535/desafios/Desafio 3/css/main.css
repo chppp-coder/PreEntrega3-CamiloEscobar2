@@ -2,6 +2,18 @@
   font-family: "Counter Strike";
   src: url(../scss/fonts/counter_strike/cs_regular.ttf) format("truetype"); }
 
+@font-face {
+  font-family: Rubik, sans-serif;
+  src: url(../scss/fonts/Rubik/Rubik-VariableFont_wght.ttf); }
+
+@font-face {
+  font-family: AkayaKanadaka;
+  src: url(../scss/fonts/Akaya_Kanadaka/AkayaKanadaka-Regular.ttf); }
+
+@font-face {
+  font-family: Schibsted Grotesk;
+  src: url(../scss/fonts/Schibsted_Grotesk/SchibstedGrotesk-VariableFont_wght.ttf); }
+
 /* reset */
 * {
   margin: 0;
@@ -34,7 +46,7 @@ body {
     body header nav .nav__a {
       color: #BDD5EF;
       font-weight: lighter;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+      font-family: 'Schibsted Grotesk', sans-serif; }
   @media screen and (max_width: 480px) {
     body header div {
       display: flex;
@@ -94,27 +106,29 @@ section {
 
 footer {
   background-color: #151426;
-  display: flex;
   height: 4rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center; }
-  footer h3 {
-    font-size: small;
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    margin-right: 10rem;
-    color: #BDD5EF; }
   footer div {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center; }
-    footer div .footer__img a:hover {
-      height: 4rem;
-      width: auto; }
+    footer div .footer__img {
+      display: flex;
+      justify-content: center;
+      width: 5vh;
+      height: 5vh; }
+  footer h3 {
+    font-size: small;
+    font-style: oblique;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-right: 10rem;
+    color: #BDD5EF; }
   footer .footer__a {
     position: fixed;
     bottom: 20px;

@@ -4,7 +4,7 @@
 @import "../utilidades/variables";
 
 /* estilos de index*/
-// estilos de header
+// estilos generales de header
 
 body{
     background-color: $principal-ct;
@@ -37,7 +37,7 @@ body{
             .nav__a{
                 color: $letras-claritas;
                 font-weight: lighter;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-family: 'Schibsted Grotesk', sans-serif;
             }
         }
         div{
@@ -120,30 +120,32 @@ section{
     }
 }
 
-// estilos de footer
+// estilos generales de footer
 
 footer{
     background-color: nth($colores-ct , 2 );
-    display: flex;
     height: 4rem;
     @include flex (flex, row, nowrap, center, center);
+    div{
+        @include flex (flex, row, nowrap, center, center);
+        .footer__img {
+            display: flex;
+            justify-content: center;
+            width: 5vh;
+            height: 5vh;
+        }
+    }
+
     h3{
         font-size: small;
+        font-style: oblique;
         display: flex;
         align-items: center;
         justify-items: center;
         margin-right: 10rem ;
         color: $letras-claritas
-    
     }
-    div{
-        
-        @include flex (flex, row, nowrap, center, center);
-        .footer__img a:hover {
-            
-            @include height (4rem)
-        }
-    }
+
     .footer__a{
         position: fixed;
         bottom: 20px; 
