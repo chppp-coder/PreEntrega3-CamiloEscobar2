@@ -14,7 +14,7 @@ body{
             background-color: nth($colores-ct, 2 );
             box-shadow:  13px 13px 26px #000000,-13px -13px 26px #21213a;
             margin-top: 2vh;
-            @include celular(768px) { 
+            @include celular { 
                 
             }
             img{
@@ -29,7 +29,7 @@ body{
                 margin-left: 5%;
                 gap: 4.5rem;
 
-                @include celular(768px){ 
+                @include celular { 
                     gap: 1rem;
                 }
             }
@@ -51,22 +51,16 @@ body{
                 margin: 2rem 3rem 3rem 3rem;
                 display: flex;
                 justify-content: center;
-                @include celular (768px){
+                @include tablet {
                     
                 }
-                @include celular (){
+                @include celular {
 
                 }
             }
         }
     }
 }
-
-
-
-
-
-
 
 // estilos de main
 
@@ -78,21 +72,88 @@ main{
             color: #060518;
             box-shadow:  -13px -13px 26px #02020a,
              13px 13px 26px #0a0826;
-            @include height(33rem);
-            @include celular() {
+             @include celular {
 
             }
+             @include height(33rem);
         }
         p{
             color: $letras-normales;
             overflow: hidden;
             margin: 2rem 2rem 2rem 2rem;
             text-align: center;
+            font-style: italic;
+            font-weight: 600;
         }
     }
 }
 
+// estilos de section
 
+section{
+    margin-left: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    @include grid ( 2 , 1vh );
+    iframe{
+        margin-left: 2rem;
+    }
+    div{
+        margin-top: 6rem;
+        margin-left: 2rem;
+        padding: 10%;
+        width: 70%;
+        height: 50%;
+        background-color: nth($colores-ct, 4 );
+        display: flex;
+        align-items: center;
+        border-radius: 31px;
+        background: #797884;
+        box-shadow:  7px 7px 16px #070721,
+             -7px -7px 16px #121023;
+        p{
+            color: $letras-oscuras;
+            max-width: 100%;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+    }
+}
 
 // estilos de footer
 
+footer{
+    background-color: nth($colores-ct , 2 );
+    display: flex;
+    height: 4rem;
+    @include flex (flex, row, nowrap, center, center);
+    h3{
+        font-size: small;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        margin-right: 10rem ;
+        color: $letras-claritas
+    
+    }
+    div{
+        
+        @include flex (flex, row, nowrap, center, center);
+        .footer__img a:hover {
+            
+            @include height (4rem)
+        }
+    }
+    .footer__a{
+        position: fixed;
+        bottom: 20px; 
+        right: 20px; 
+        z-index: 9999;
+        padding: 10px 20px;
+        background-color: #e15147;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

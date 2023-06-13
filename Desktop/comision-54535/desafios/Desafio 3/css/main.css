@@ -13,7 +13,7 @@ body {
   background-color: #060518; }
   body header nav {
     border-radius: 26px;
-    background-color: #232233;
+    background-color: #151426;
     box-shadow: 13px 13px 26px #000000,-13px -13px 26px #21213a;
     margin-top: 2vh; }
     body header nav img {
@@ -28,7 +28,7 @@ body {
     body header nav ul {
       margin-left: 5%;
       gap: 4.5rem; }
-      @media screen and (max_width: 768px) {
+      @media screen and (max_width: 480px) {
         body header nav ul {
           gap: 1rem; } }
     body header nav .nav__a {
@@ -61,4 +61,68 @@ main div {
     color: #EDE8E5;
     overflow: hidden;
     margin: 2rem 2rem 2rem 2rem;
-    text-align: center; }
+    text-align: center;
+    font-style: italic;
+    font-weight: 600; }
+
+section {
+  margin-left: 6rem;
+  display: flex;
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vh; }
+  section iframe {
+    margin-left: 2rem; }
+  section div {
+    margin-top: 6rem;
+    margin-left: 2rem;
+    padding: 10%;
+    width: 70%;
+    height: 50%;
+    background-color: #403F4E;
+    display: flex;
+    align-items: center;
+    border-radius: 31px;
+    background: #797884;
+    box-shadow: 7px 7px 16px #070721, -7px -7px 16px #121023; }
+    section div p {
+      color: #080434;
+      max-width: 100%;
+      margin: 0 auto;
+      font-weight: bold; }
+
+footer {
+  background-color: #151426;
+  display: flex;
+  height: 4rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center; }
+  footer h3 {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-right: 10rem;
+    color: #BDD5EF; }
+  footer div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center; }
+    footer div .footer__img a:hover {
+      height: 4rem;
+      width: auto; }
+  footer .footer__a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 10px 20px;
+    background-color: #e15147;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; }

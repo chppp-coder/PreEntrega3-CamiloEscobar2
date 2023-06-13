@@ -12,15 +12,27 @@
     width: auto;
 }
 
+@mixin grid ($columnas , $espacio) {
+    display: grid;
+    grid-template-columns: repeat( $columnas , 1fr );
+    gap: $espacio;
+}
+
 // media queries
 
-@mixin celular ( $medida : 480px) {
-    @media screen and (max_width: $medida ) {
+@mixin celular {
+    @media screen and (max_width: 480px ) {
        @content; 
     }
 }
 
-// neomorfismo
+@mixin tablet{
+    @media screen and (max_width: 768px ) {
+        @content;
+    }
+}
+
+// neomorfismo, probablemente no se use
 
 @mixin neo( $radius , $eje) {
     border-radius: $radius;
