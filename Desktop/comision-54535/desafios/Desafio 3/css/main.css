@@ -74,8 +74,10 @@ main div {
     overflow: hidden;
     margin: 2rem 2rem 2rem 2rem;
     text-align: center;
-    font-style: italic;
-    font-weight: 600; }
+    font-family: Rubik;
+    font-style: oblique;
+    font-weight: 400;
+    font-size: large; }
 
 section {
   margin-left: 6rem;
@@ -103,7 +105,7 @@ section {
       overflow: hidden;
       max-width: 100%;
       margin: 0 auto;
-      font-weight: bold; }
+      font-family: Schibsted Grotesk; }
 
 footer {
   background-color: #151426;
