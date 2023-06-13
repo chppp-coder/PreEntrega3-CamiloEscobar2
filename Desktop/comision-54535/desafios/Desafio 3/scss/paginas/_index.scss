@@ -12,7 +12,7 @@ body{
         nav{
             border-radius: 26px;
             background-color: nth($colores-ct, 2 );
-            box-shadow:  13px 13px 26px #000000,-13px -13px 26px #21213a;
+            box-shadow:  13px 13px 26px #000000,-13px -13px 26px #151525;
             margin-top: 2vh;
             @include celular { 
                 
@@ -127,21 +127,17 @@ footer{
     height: 4rem;
     @include flex (flex, row, nowrap, center, center);
     div{
-        @include flex (flex, row, nowrap, center, center);
+        @include flex (flex, row, nowrap, space-evenly, center);
         .footer__img {
-            display: flex;
-            justify-content: center;
-            width: 5vh;
-            height: 5vh;
+            width: 6vh;
+            height: 6vh;
+            margin-inline: 1rem;
         }
     }
 
     h3{
         font-size: small;
         font-style: oblique;
-        display: flex;
-        align-items: center;
-        justify-items: center;
         margin-right: 10rem ;
         color: $letras-claritas
     }
@@ -159,3 +155,4 @@ footer{
         cursor: pointer;
     }
 }
+
