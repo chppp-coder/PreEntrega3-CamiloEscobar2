@@ -100,6 +100,7 @@ section {
     box-shadow: 7px 7px 16px #070721, -7px -7px 16px #121023; }
     section div p {
       color: #080434;
+      overflow: hidden;
       max-width: 100%;
       margin: 0 auto;
       font-weight: bold; }
