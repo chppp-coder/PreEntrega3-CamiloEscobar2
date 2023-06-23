@@ -1,0 +1,33 @@
+footer{
+    background-color: nth($colores-ct , 2 );
+    height: 4rem;
+    @include flex (flex, row, nowrap, center, center);
+    div{
+        @include flex (flex, row, nowrap, space-evenly, center);
+        .footer__img {
+            width: 6vh;
+            height: 6vh;
+            margin-inline: 1rem;
+        }
+    }
+
+    h3{
+        font-size: small;
+        font-style: oblique;
+        margin-right: 10rem ;
+        color: $letras-claritas
+    }
+
+    .footer__a{
+        position: fixed;
+        bottom: 20px; 
+        right: 20px; 
+        z-index: 9999;
+        padding: 10px 20px;
+        background-color: #e15147;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

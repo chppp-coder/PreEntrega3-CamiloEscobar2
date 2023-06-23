@@ -1,0 +1,68 @@
+
+/* estilos de index*/
+
+body{
+    background-color: $principal-ct;
+
+// estilos de main
+
+main{
+    div{
+        @include flex(flex, column, nowrap, center, center) ;
+        img{
+            border-radius: 26px;
+            color: #060518;
+            box-shadow:  -13px -13px 26px #02020a,
+             13px 13px 26px #0a0826;
+             @include celular {
+
+            }
+             @include height(33rem);
+        }
+        p{
+            color: $letras-normales;
+            overflow: hidden;
+            margin: 2rem 2rem 2rem 2rem;
+            text-align: center;
+            font-family: Rubik;
+            font-style: oblique;
+            font-weight: 400;
+            font-size: large;
+        }
+    }
+}
+
+// estilos de section
+
+section.section__index{
+    margin-left: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    @include grid ( 2 , 1vh );
+    iframe{
+        margin-left: 2rem;
+    }
+    div{
+        margin-top: 6rem;
+        margin-left: 2rem;
+        padding: 10%;
+        width: 70%;
+        height: 50%;
+        background-color: nth($colores-ct, 4 );
+        display: flex;
+        align-items: center;
+        border-radius: 31px;
+        background: #797884;
+        box-shadow:  7px 7px 16px #070721,
+             -7px -7px 16px #121023;
+        p{
+            color: $letras-oscuras;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 0 auto;
+            font-family: Schibsted Grotesk;
+        }
+    }
+}
+
+}

@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Counter Strike"; 
+    src: url(../scss/fonts/counter_strike/cs_regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Rubik, sans-serif;
+  src: url(../scss/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: AkayaKanadaka, sans-serif;
+  src: url(../scss/fonts/Akaya_Kanadaka/AkayaKanadaka-Regular.ttf);
+}
+
+@font-face {
+  font-family: Schibsted Grotesk;
+  src: url(../scss/fonts/Schibsted_Grotesk/SchibstedGrotesk-VariableFont_wght.ttf);
+}
+
+// imports utilidades
+@import "../utilidades/mixin";
+@import "../utilidades/listas";
+@import "../utilidades/variables";
+
+// import nav y footer
+@import "../scss/paginas/estilos-generales/header";
+@import "../scss/paginas/estilos-generales/footer";
+
+// imports pages
+@import "../scss/paginas/historia";
+@import "../scss/paginas/index";
+
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

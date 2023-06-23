@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Counter Strike";
+  src: url(../scss/fonts/counter_strike/cs_regular.ttf) format("truetype"); }
+
+@font-face {
+  font-family: Rubik, sans-serif;
+  src: url(../scss/fonts/Rubik/Rubik-VariableFont_wght.ttf); }
+
+@font-face {
+  font-family: AkayaKanadaka, sans-serif;
+  src: url(../scss/fonts/Akaya_Kanadaka/AkayaKanadaka-Regular.ttf); }
+
+@font-face {
+  font-family: Schibsted Grotesk;
+  src: url(../scss/fonts/Schibsted_Grotesk/SchibstedGrotesk-VariableFont_wght.ttf); }
+
+header nav {
+  border-radius: 26px;
+  background-color: #151426;
+  box-shadow: 13px 13px 26px #000000,-13px -13px 26px #151525;
+  margin-top: 2vh; }
+  header nav img {
+    margin-left: 8rem;
+    height: 3.5rem;
+    width: auto; }
+  header nav ul {
+    margin-left: 5%;
+    gap: 4.5rem; }
+  header nav .nav__a {
+    color: #BDD5EF;
+    font-weight: lighter;
+    font-family: 'Schibsted Grotesk', sans-serif; }
+
+header div h1 {
+  color: white;
+  font-family: Counter Strike;
+  margin: 2rem 3rem 3rem 3rem;
+  display: flex;
+  justify-content: center; }
+
+footer {
+  background-color: #151426;
+  height: 4rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center; }
+  footer div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center; }
+    footer div .footer__img {
+      width: 6vh;
+      height: 6vh;
+      margin-inline: 1rem; }
+  footer h3 {
+    font-size: small;
+    font-style: oblique;
+    margin-right: 10rem;
+    color: #BDD5EF; }
+  footer .footer__a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 10px 20px;
+    background-color: #e15147;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; }
+
+header h1.h1__principal {
+  margin-top: 4rem; }
+
+main.main__grid section.section__historia {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: center;
+  align-items: start;
+  grid-template-areas: "izquierda texto derecha"; }
+  main.main__grid section.section__historia div.div__columna__izquierda {
+    grid-area: izquierda;
+    row-gap: 30vh;
+    margin: 40% 0 10% 0;
+    width: 55vh;
+    height: auto; }
+    main.main__grid section.section__historia div.div__columna__izquierda img {
+      max-width: 100%;
+      height: auto;
+      margin: 0 0 0 40%; }
+  main.main__grid section.section__historia div.div__texto__historia {
+    padding-top: 0%; }
+    main.main__grid section.section__historia div.div__texto__historia div.containter__texto__historia p.p__historia {
+      font-family: AkayaKanadaka, sans-serif;
+      max-width: 60%;
+      min-width: 40%; }
+  main.main__grid section.section__historia div.div__columna__derecha {
+    grid-area: derecha;
+    row-gap: 30vh;
+    margin: 0 0 0 0;
+    width: 55vh;
+    height: auto; }
+    main.main__grid section.section__historia div.div__columna__derecha img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin: 0 40% 0 0; }
+
+/* estilos de index*/
+body {
+  background-color: #060518; }
+  body main div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center; }
+    body main div img {
+      border-radius: 26px;
+      color: #060518;
+      box-shadow: -13px -13px 26px #02020a, 13px 13px 26px #0a0826;
+      height: 33rem;
+      width: auto; }
+    body main div p {
+      color: #EDE8E5;
+      overflow: hidden;
+      margin: 2rem 2rem 2rem 2rem;
+      text-align: center;
+      font-family: Rubik;
+      font-style: oblique;
+      font-weight: 400;
+      font-size: large; }
+  body section.section__index {
+    margin-left: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vh; }
+    body section.section__index iframe {
+      margin-left: 2rem; }
+    body section.section__index div {
+      margin-top: 6rem;
+      margin-left: 2rem;
+      padding: 10%;
+      width: 70%;
+      height: 50%;
+      background-color: #403F4E;
+      display: flex;
+      align-items: center;
+      border-radius: 31px;
+      background: #797884;
+      box-shadow: 7px 7px 16px #070721, -7px -7px 16px #121023; }
+      body section.section__index div p {
+        color: #080434;
+        overflow: hidden;
+        max-width: 100%;
+        margin: 0 auto;
+        font-family: Schibsted Grotesk; }
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }

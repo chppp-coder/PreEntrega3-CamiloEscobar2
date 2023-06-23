@@ -1,0 +1,31 @@
+header{
+    nav{
+        border-radius: 26px;
+        background-color: nth($colores-ct, 2 );
+        box-shadow:  13px 13px 26px #000000,-13px -13px 26px #151525;
+        margin-top: 2vh;
+        img{
+            margin-left: 8rem;
+            @include height (3.5rem);
+        }
+        ul{
+            margin-left: 5%;
+            gap: 4.5rem;
+        }
+
+        .nav__a{
+            color: $letras-claritas;
+            font-weight: lighter;
+            font-family: 'Schibsted Grotesk', sans-serif;
+        }
+    }
+    div{
+        h1{ // me gustaria hacer mas grande este h1 de alguna manera
+            color: white;
+            font-family: Counter Strike;
+            margin: 2rem 3rem 3rem 3rem;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
