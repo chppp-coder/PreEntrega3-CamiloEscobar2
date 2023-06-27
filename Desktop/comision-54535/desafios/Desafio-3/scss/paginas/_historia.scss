@@ -31,8 +31,13 @@ main.main__grid{
                 
                 p.p__historia{
                     font-family: AkayaKanadaka, sans-serif;
+                    padding: 5%;
                     max-width: 60%;
                     min-width: 40%;
+                    border-radius: 50px;
+                    background: #060518;
+                    box-shadow: inset 20px 20px 40px #040310,
+                                inset -20px -20px 40px #080720;
                 }
             }
         }

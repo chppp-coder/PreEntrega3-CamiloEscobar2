@@ -94,8 +94,12 @@ main.main__grid section.section__historia {
     padding-top: 0%; }
     main.main__grid section.section__historia div.div__texto__historia div.containter__texto__historia p.p__historia {
       font-family: AkayaKanadaka, sans-serif;
+      padding: 5%;
       max-width: 60%;
-      min-width: 40%; }
+      min-width: 40%;
+      border-radius: 50px;
+      background: #060518;
+      box-shadow: inset 20px 20px 40px #040310, inset -20px -20px 40px #080720; }
   main.main__grid section.section__historia div.div__columna__derecha {
     grid-area: derecha;
     row-gap: 30vh;
@@ -158,6 +162,17 @@ body {
         max-width: 100%;
         margin: 0 auto;
         font-family: Schibsted Grotesk; }
+
+#carouselExampleCaptions {
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+  border-radius: 50px;
+  background: #060518;
+  box-shadow: 28px 28px 55px #03020b, -28px -28px 55px #090825; }
+  #carouselExampleCaptions .border-radius__img {
+    border-radius: 20px; }
 
 /* reset */
 * {
