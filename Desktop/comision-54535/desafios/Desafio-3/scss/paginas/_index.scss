@@ -9,6 +9,9 @@ body{
 main{
     div{
         @include flex(flex, column, nowrap, center, center) ;
+        
+
+        
         img{
             border-radius: 26px;
             color: #060518;
@@ -21,6 +24,7 @@ main{
         }
         p{
             color: $letras-normales;
+            padding: 0 10vh 0vh 10vh;
             overflow: hidden;
             margin: 2rem 2rem 2rem 2rem;
             text-align: center;
@@ -43,7 +47,7 @@ section.section__index{
         margin-left: 2rem;
     }
     div{
-        margin-top: 6rem;
+        margin-top: 5rem;
         margin-left: 2rem;
         padding: 10%;
         width: 70%;
@@ -57,6 +61,7 @@ section.section__index{
              -7px -7px 16px #121023;
         p{
             color: $letras-oscuras;
+            text-align: justify;
             overflow: hidden;
             max-width: 100%;
             margin: 0 auto;

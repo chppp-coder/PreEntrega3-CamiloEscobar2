@@ -1,6 +1,6 @@
 // estilos carrusel
 
-#carouselExampleCaptions {
+.carrusel__div {
     width: 75%; 
     height: auto;
     margin: 0 auto; 
@@ -9,6 +9,17 @@
     background: #060518;
     box-shadow:  28px 28px 55px #03020b,
                  -28px -28px 55px #090825;
+
+                 .letras__carrusel{
+                    background: rgba(158, 154, 154, 0.5);
+                     backdrop-filter: blur(15px);
+                     color: $letras-oscuras;
+                     font-weight: 500;
+                     font-size: smaller;
+                     border-radius: 10px;
+                     padding: 3vh;
+                     
+                 }
                  
                  .border-radius__img{
                     border-radius: 20px;

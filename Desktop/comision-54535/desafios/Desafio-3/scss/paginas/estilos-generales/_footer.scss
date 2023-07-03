@@ -1,4 +1,4 @@
-footer{
+footer {
     background-color: nth($colores-ct , 2 );
     height: 4rem;
     @include flex (flex, row, nowrap, center, center);
@@ -11,11 +11,11 @@ footer{
         }
     }
 
-    h3{
+    h3 {
         font-size: small;
         font-style: oblique;
         margin-right: 10rem ;
-        color: $letras-claritas
+        color: $letras-claritas;
     }
 
     .footer__a{

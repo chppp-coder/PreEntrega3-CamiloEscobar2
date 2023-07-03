@@ -128,6 +128,7 @@ body {
       width: auto; }
     body main div p {
       color: #EDE8E5;
+      padding: 0 10vh 0vh 10vh;
       overflow: hidden;
       margin: 2rem 2rem 2rem 2rem;
       text-align: center;
@@ -145,7 +146,7 @@ body {
     body section.section__index iframe {
       margin-left: 2rem; }
     body section.section__index div {
-      margin-top: 6rem;
+      margin-top: 5rem;
       margin-left: 2rem;
       padding: 10%;
       width: 70%;
@@ -158,12 +159,13 @@ body {
       box-shadow: 7px 7px 16px #070721, -7px -7px 16px #121023; }
       body section.section__index div p {
         color: #080434;
+        text-align: justify;
         overflow: hidden;
         max-width: 100%;
         margin: 0 auto;
         font-family: Schibsted Grotesk; }
 
-#carouselExampleCaptions {
+.carrusel__div {
   width: 75%;
   height: auto;
   margin: 0 auto;
@@ -171,8 +173,67 @@ body {
   border-radius: 50px;
   background: #060518;
   box-shadow: 28px 28px 55px #03020b, -28px -28px 55px #090825; }
-  #carouselExampleCaptions .border-radius__img {
+  .carrusel__div .letras__carrusel {
+    background: rgba(158, 154, 154, 0.5);
+    backdrop-filter: blur(15px);
+    color: #080434;
+    font-weight: 500;
+    font-size: smaller;
+    border-radius: 10px;
+    padding: 3vh; }
+  .carrusel__div .border-radius__img {
     border-radius: 20px; }
+
+main div.cartas__jugadores {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  row-gap: 10vh;
+  margin: 5vh 0 12vh 0; }
+  main div.cartas__jugadores .main__card {
+    max-width: 300px;
+    border-radius: 13px;
+    background: #060518;
+    box-shadow: 20px 20px 60px #04030f, -20px -20px 60px #080721; }
+    main div.cartas__jugadores .main__card .main__card__content {
+      padding: 1.1rem; }
+    main div.cartas__jugadores .main__card .main__card__image {
+      width: 100%;
+      height: 150px;
+      overflow: hidden;
+      border-radius: 13px; }
+      main div.cartas__jugadores .main__card .main__card__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 13px; }
+    main div.cartas__jugadores .main__card .main__card__title {
+      color: #BDD5EF;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      font-weight: 600; }
+    main div.cartas__jugadores .main__card .main__card__desc {
+      margin-top: 0.5rem;
+      color: #aec3ea;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      padding: 2em 2em 2em 2em; }
+    main div.cartas__jugadores .main__card .main__card__action {
+      display: inline-flex;
+      margin-top: 1rem;
+      color: #ffffff;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 500;
+      align-items: center;
+      gap: 0.25rem;
+      background-color: #2563EB;
+      padding: 4px 8px;
+      border-radius: 4px; }
+      main div.cartas__jugadores .main__card .main__card__action span {
+        transition: .3s ease; }
+      main div.cartas__jugadores .main__card .main__card__action:hover span {
+        transform: translateX(4px); }
 
 /* reset */
 * {

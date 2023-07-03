@@ -1,2 +1,71 @@
-// estilo de carta
+main {
+  div.cartas__jugadores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    row-gap: 10vh;
+    margin: 5vh 0 12vh 0;
 
+    .main__card {
+      max-width: 300px;
+      border-radius: 13px;
+      background: #060518;
+      box-shadow: 20px 20px 60px #04030f, -20px -20px 60px #080721;
+
+      .main__card__content {
+        padding: 1.1rem;
+      }
+
+      .main__card__image {
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 13px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          border-radius: 13px;
+        }
+      }
+
+      .main__card__title {
+        color: $letras-claritas;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        font-weight: 600;
+      }
+
+      .main__card__desc {
+        margin-top: 0.5rem;
+        color: #aec3ea;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        padding: 2em 2em 2em 2em;
+      }
+
+      .main__card__action {
+        display: inline-flex;
+        margin-top: 1rem;
+        color: #ffffff;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 500;
+        align-items: center;
+        gap: 0.25rem;
+        background-color: #2563EB;
+        padding: 4px 8px;
+        border-radius: 4px;
+
+        span {
+          transition: .3s ease;
+        }
+
+        &:hover span {
+          transform: translateX(4px);
+        }
+      }
+    }
+  }
+}
