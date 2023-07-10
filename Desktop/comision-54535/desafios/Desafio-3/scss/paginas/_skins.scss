@@ -1,0 +1,27 @@
+// Contenido main
+
+.main__skins {
+  .main__skins__contenedor {
+    display: flex;
+  }
+
+  .main__skins__item {
+    padding: 3vh 10vh 10vh 10vh;
+    flex-direction: row;
+    
+  }
+
+  .main__skins__item--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .main__skins__img {
+    width: 60%;
+  }
+
+  .main__skins__texto {
+    width: 40%;
+    margin: 0;
+
+  }
+}
